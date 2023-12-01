@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Index</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css"
+			rel="stylesheet"
+		/>
+		<link href="/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container">
+				<a class="navbar-brand" href="/index.html">
+					<img src="/media/Logo.png" alt="Bootstrap" width="90" height="90" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/index.html"
+								>Tablero</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Proyecto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Documentos</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="container my-4">
+				<h2>Cambio #16: Cambiar puerta a corrediza</h2>
+				<div class="d-flex my-4 ">
+					<div class="col-md-1">
+						<div class="flex-column lh-sm">
+							<p>Estado:</p>
+							<h3>
+								<span class="badge bg-primary">Nuevo</span>
+							</h3>
+						</div>
+					</div>
+					<div class="col-md-10 offset-md-1">
+						<div class="bs-stepper" id="stepper">
+							<div class="bs-stepper-header" role="tablist">
+								<!-- your steps here -->
+								<div class="step active d-flex align-items-center" data-target="#logins-part">
+									<span class="bs-stepper-circle">1</span>
+									<span class="bs-stepper-label">
+										Detectado
+										<br>
+										11/11/23
+									</span>
+								</div>
+								<div class="line bg-primary"></div>
+								<div class="step" data-target="#information-part">
+									<span class="bs-stepper-circle">2</span>
+									<span class="bs-stepper-label">En progreso</span>
+								</div>
+								<div class="line"></div>
+								<div class="step" data-target="#information-part">
+									<span class="bs-stepper-circle">3</span>
+									<span class="bs-stepper-label">Detallando</span>
+								</div>
+								<div class="line"></div>
+								<div class="step" data-target="#information-part">
+									<span class="bs-stepper-circle">4</span>
+									<span class="bs-stepper-label">Terminado</span>
+								</div>
+								<div class="line"></div>
+								<div class="step" data-target="#information-part">
+									<span class="bs-stepper-circle">5</span>
+									<span class="bs-stepper-label">Cerrado</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>Imágenes</h4>
+				<div class="d-flex flex-column align-items-center">
+					<div class="details-carousel">
+						<div id="carouselExampleIndicators" class="carousel slide">
+							<div class="carousel-indicators">
+								<button
+									type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="0"
+									class="active"
+									aria-current="true"
+									aria-label="Slide 1"
+								></button>
+								<button
+									type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="1"
+									aria-label="Slide 2"
+								></button>
+								<button
+									type="button"
+									data-bs-target="#carouselExampleIndicators"
+									data-bs-slide-to="2"
+									aria-label="Slide 3"
+								></button>
+							</div>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="/media/cambios/puertaCorrediza/foto1.jpg"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="/media/cambios/puertaCorrediza/foto2.jpg"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="/media/cambios/puertaCorrediza/foto3.jpg"
+										class="d-block w-100"
+										alt="..."
+									/>
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide="prev"
+							>
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"
+								></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide="next"
+							>
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"
+								></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="my-4">
+					<h4>Detalle</h4>
+					<p class="lh-lg">
+						Imagina que estás construyendo una casa con un diseño contemporáneo
+						y espacios abiertos. En el área de la sala de estar, originalmente
+						se había planeado instalar una puerta tradicional que se abriría
+						hacia adentro, pero a medida que avanzaba la construcción, te das
+						cuenta de que este diseño no se alinea con la estética moderna y
+						funcional que estás buscando. Además, la sala de estar es un espacio
+						de reunión familiar y social, por lo que necesitas una solución que
+						maximice el espacio y la comodidad de tus invitados.
+					</p>
+				</div>
+				<div class="my-4">
+					<h4>Justificación precio estimado</h4>
+					<div class="table-responsive ">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">Concepto</th>
+									<th scope="col">Precio promedio unitario</th>
+									<th scope="col">Proveedor</th>
+									<th scope="col">Cantidad estimada</th>
+									<th scope="col">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Puerta corrediza TDU-108349 Madera</th>
+									<td>$8,000.00 MXN</td>
+									<td>Home Depot</td>
+									<td>1</td>
+									<td>$8,000.00 MXN</td>
+								</tr>
+								<tr>
+									<th scope="row">Perno de hierro 12 mm</th>
+									<td>$1,600.00 MXN</td>
+									<td>Pernos.com</td>
+									<td>1</td>
+									<td>$1,600.00 MXN</td>
+								</tr>
+								<tr>
+									<th scope="row">Mano de obra</th>
+									<td>$200.00 MXN</td>
+									<td>Estimado promedio</td>
+									<td>12 hrs</td>
+									<td>$2,400.00 MXN</td>
+								</tr>
+							</tbody>
+							<tfoot class="fw-bold">
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Costo total</td>
+									<td>$12,000.00 MXN</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Tiempo estimado en horas</td>
+									<td>12 hrs</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script>
+			function setVerticalStepper() {
+				const vw = Math.max(
+					document.documentElement.clientWidth || 0,
+					window.innerWidth || 0
+				);
+				const element = document.getElementById('stepper');
+				if (vw < 980) {
+					element.classList.add('vertical');
+				} else {
+					element.classList.remove('vertical');
+				}
+			}
+			setVerticalStepper();
+
+			window.addEventListener('resize', setVerticalStepper, true);
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

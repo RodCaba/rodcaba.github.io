@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Index</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./media/Logo.png" alt="Bootstrap" width="90" height="90" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>Tablero</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Proyecto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Documentos</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="container my-4">
+				<div class="row align-items-center my-4">
+					<div class="col-md-4">
+						Mi proyecto
+						<img class="img-thumbnail" src="./media/projectCover.jpg" />
+					</div>
+					<div class="col-md-4 text-center">
+						<div>
+							Fecha de entrega pactada
+							<p class="text-danger">Octubre 2023</p>
+							Fecha de entrega estimada
+							<p>Febrero 2024</p>
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<div>
+							Precio pactado
+							<p>$4,130,000.00 MXN</p>
+							Costos adicionales estimados
+							<p class="text-warning">$234,000.MXN</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="bs-stepper" id="stepper">
+						<div class="bs-stepper-header" role="tablist">
+							<!-- your steps here -->
+							<div class="step active" data-target="#logins-part">
+								<span class="bs-stepper-circle">1</span>
+								<span class="bs-stepper-label">Inicio</span>
+							</div>
+							<div class="line bg-primary"></div>
+							<div class="step active" data-target="#information-part">
+								<span class="bs-stepper-circle">2</span>
+								<span class="bs-stepper-label">En trámites legales</span>
+							</div>
+							<div class="line bg-primary"></div>
+							<div class="step active" data-target="#information-part">
+								<span class="bs-stepper-circle">3</span>
+								<span class="bs-stepper-label">En construcción</span>
+							</div>
+							<div class="line"></div>
+							<div class="step" data-target="#information-part">
+								<span class="bs-stepper-circle">4</span>
+								<span class="bs-stepper-label">Detallados</span>
+							</div>
+							<div class="line"></div>
+							<div class="step" data-target="#information-part">
+								<span class="bs-stepper-circle">5</span>
+								<span class="bs-stepper-label">Entrega</span>
+							</div>
+						</div>
+						<div class="bs-stepper-content">
+							<!-- your steps content here -->
+							<div
+								id="logins-part"
+								class="content"
+								role="tabpanel"
+								aria-labelledby="logins-part-trigger"
+							></div>
+							<div
+								id="information-part"
+								class="content"
+								role="tabpanel"
+								aria-labelledby="information-part-trigger"
+							></div>
+						</div>
+					</div>
+				</div>
+				<div class="my-4">
+					<h3>Último seguimiento (11/11/23)</h3>
+					<div class="row">
+						<div class="tab-content col-md-10" id="myTabContent">
+							<div
+								class="tab-pane fade show active"
+								id="seguimientoUno"
+								role="tabpanel"
+								tabindex="0"
+							>
+								<div>
+									<ul
+										class="nav nav-tabs"
+										id="seguimientoUnoTab"
+										role="tablist"
+									>
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link active"
+												id="carouselSeguimientoUno-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#carouselSeguimientoUno-tab-pane"
+												type="button"
+												role="tab"
+												aria-controls="carouselSeguimientoUno-tab-pane"
+												aria-selected="true"
+											>
+												Galería
+											</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link"
+												id="seguimientoUnoDetalle-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#seguimientoUnoDetalle-tab-pane"
+												type="button"
+												role="tab"
+												aria-controls="seguimientoUnoDetalle-tab-pane"
+												aria-selected="false"
+											>
+												Resumen
+											</button>
+										</li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+										<div
+											class="tab-pane fade show active"
+											id="carouselSeguimientoUno-tab-pane"
+											role="tabpanel"
+											aria-labelledby="carouselSeguimientoUno-tab"
+											tabindex="0"
+										>
+											<div
+												id="carouselExampleIndicators"
+												class="carousel slide"
+											>
+												<div class="carousel-indicators">
+													<button
+														type="button"
+														data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="0"
+														class="active"
+														aria-current="true"
+														aria-label="Slide 1"
+													></button>
+													<button
+														type="button"
+														data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="1"
+														aria-label="Slide 2"
+													></button>
+													<button
+														type="button"
+														data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="2"
+														aria-label="Slide 3"
+													></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img
+															src="./media/seguimiento1/foto1.jpg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./media/seguimiento1/foto2.webp"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./media/seguimiento1/foto3.jpg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+												</div>
+												<button
+													class="carousel-control-prev"
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide="prev"
+												>
+													<span
+														class="carousel-control-prev-icon"
+														aria-hidden="true"
+													></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button
+													class="carousel-control-next"
+													type="button"
+													data-bs-target="#carouselExampleIndicators"
+													data-bs-slide="next"
+												>
+													<span
+														class="carousel-control-next-icon"
+														aria-hidden="true"
+													></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+										</div>
+										<div
+											class="tab-pane fade"
+											id="seguimientoUnoDetalle-tab-pane"
+											role="tabpanel"
+											aria-labelledby="profile-tab"
+											tabindex="0"
+										>
+											<ul class="list-group">
+												<li class="list-group-item">
+													Hubo un avance en A, B y C.
+												</li>
+												<li class="list-group-item">
+													No se completó el avance pactado en D.
+												</li>
+												<li class="list-group-item">
+													La constructora mencionó que completará el flujo de
+													agua para X.
+												</li>
+												<li class="list-group-item">
+													Hubo un error en Z, implicará costos para el cliente
+													estimados en $12,000.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="tab-pane fade"
+								id="seguimientoDos"
+								role="tabpanel"
+								aria-labelledby="profile-tab"
+								tabindex="0"
+							>
+								<div>
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link active"
+												id="home-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#home-tab-pane"
+												type="button"
+												role="tab"
+												aria-controls="home-tab-pane"
+												aria-selected="true"
+											>
+												Galería
+											</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link"
+												id="profile-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#profile-tab-pane"
+												type="button"
+												role="tab"
+												aria-controls="profile-tab-pane"
+												aria-selected="false"
+											>
+												Resumen
+											</button>
+										</li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+										<div
+											class="tab-pane fade show active"
+											id="home-tab-pane"
+											role="tabpanel"
+											aria-labelledby="home-tab"
+											tabindex="0"
+										>
+											<div id="seguimiento2Carousel" class="carousel slide">
+												<div class="carousel-indicators">
+													<button
+														type="button"
+														data-bs-target="#seguimiento2Carousel"
+														data-bs-slide-to="0"
+														class="active"
+														aria-current="true"
+														aria-label="Slide 1"
+													></button>
+													<button
+														type="button"
+														data-bs-target="#seguimiento2Carousel"
+														data-bs-slide-to="1"
+														aria-label="Slide 2"
+													></button>
+													<button
+														type="button"
+														data-bs-target="#seguimiento2Carousel"
+														data-bs-slide-to="2"
+														aria-label="Slide 3"
+													></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img
+															src="./media/seguimiento2/foto1.webp"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./media/seguimiento2/foto23.jpg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./media/seguimiento2/foto3.jpeg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+												</div>
+												<button
+													class="carousel-control-prev"
+													type="button"
+													data-bs-target="#seguimiento2Carousel"
+													data-bs-slide="prev"
+												>
+													<span
+														class="carousel-control-prev-icon"
+														aria-hidden="true"
+													></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button
+													class="carousel-control-next"
+													type="button"
+													data-bs-target="#seguimiento2Carousel"
+													data-bs-slide="next"
+												>
+													<span
+														class="carousel-control-next-icon"
+														aria-hidden="true"
+													></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+										</div>
+										<div
+											class="tab-pane fade"
+											id="profile-tab-pane"
+											role="tabpanel"
+											aria-labelledby="profile-tab"
+											tabindex="0"
+										>
+											<ul class="list-group">
+												<li class="list-group-item">
+													Notable mejora en la manguera del filtro A.
+												</li>
+												<li class="list-group-item">
+													Se comentó que se deberá mejorar la apostilla de la
+													puerta 1.
+												</li>
+												<li class="list-group-item">
+													Hubo una fuga de agua que paró la operación por 3
+													días.
+												</li>
+												<li class="list-group-item">
+													Recordatorio para el cliente de las celebraciones de
+													la próxima semana.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="tab-pane fade"
+								id="seguimientoTres"
+								role="tabpanel"
+								aria-labelledby="profile-tab"
+								tabindex="0"
+							>
+								<div>
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link active"
+												id="seguimientoTres-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#seguimientoTres-tab-pane"
+												type="button"
+												role="tab"
+												aria-controls="seguimientoTres-tab-pane"
+												aria-selected="true"
+											>
+												Galería
+											</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button
+												class="nav-link"
+												id="seguimientoTres-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#seguimientoTres-details"
+												type="button"
+												role="tab"
+												aria-controls="seguimientoTres-details"
+												aria-selected="false"
+											>
+												Resumen
+											</button>
+										</li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+										<div
+											class="tab-pane fade show active"
+											id="seguimientoTres-tab-pane"
+											role="tabpanel"
+											aria-labelledby="seguimientoTres-tab"
+											tabindex="0"
+										>
+											<div id="seguimientoTresCarousel" class="carousel slide">
+												<div class="carousel-indicators">
+													<button
+														type="button"
+														data-bs-target="#seguimientoTresCarousel"
+														data-bs-slide-to="0"
+														class="active"
+														aria-current="true"
+														aria-label="Slide 1"
+													></button>
+													<button
+														type="button"
+														data-bs-target="#seguimientoTresCarousel"
+														data-bs-slide-to="1"
+														aria-label="Slide 2"
+													></button>
+													<button
+														type="button"
+														data-bs-target="#seguimientoTresCarousel"
+														data-bs-slide-to="2"
+														aria-label="Slide 3"
+													></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img
+															src="./media/seguimiento3/foto1.jpg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./media/seguimiento3/foto2.jpg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+													<div class="carousel-item">
+														<img
+															src="./media/seguimiento3/foto3.jpg"
+															class="d-block w-100"
+															alt="..."
+														/>
+													</div>
+												</div>
+												<button
+													class="carousel-control-prev"
+													type="button"
+													data-bs-target="#seguimientoTresCarousel"
+													data-bs-slide="prev"
+												>
+													<span
+														class="carousel-control-prev-icon"
+														aria-hidden="true"
+													></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button
+													class="carousel-control-next"
+													type="button"
+													data-bs-target="#seguimientoTresCarousel"
+													data-bs-slide="next"
+												>
+													<span
+														class="carousel-control-next-icon"
+														aria-hidden="true"
+													></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+										</div>
+										<div
+											class="tab-pane fade"
+											id="seguimientoTres-details"
+											role="tabpanel"
+											aria-labelledby="seguimientoTres-tab"
+											tabindex="0"
+										>
+											<ul class="list-group">
+												<li class="list-group-item">
+													Se pudo determinar la causa de la fuga eléctrica y se
+													está reparando.
+												</li>
+												<li class="list-group-item">
+													La constructora se comprometió a entregar las puertas
+													y ventanas.
+												</li>
+												<li class="list-group-item">
+													Se deberá determinar el costo de las persianas rotas.
+												</li>
+												<li class="list-group-item">
+													Se avanzó en la mejoría de Y y de Z.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<h3>Seguimientos:</h3>
+							<ul
+								class="nav nav-underline flex-column"
+								id="myTab"
+								role="tablist"
+							>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link active"
+										id="home-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#seguimientoUno"
+										type="button"
+										role="tab"
+										aria-controls="seguimientoUno"
+										aria-selected="true"
+									>
+										11/11/23
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="profile-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#seguimientoDos"
+										type="button"
+										role="tab"
+										aria-controls="seguimientoDos"
+										aria-selected="false"
+									>
+										02/11/23
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="contact-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#seguimientoTres"
+										type="button"
+										role="tab"
+										aria-controls="seguimientoTres"
+										aria-selected="false"
+									>
+										24/10/23
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="my-4">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link active"
+								id="cambiosSolicitados"
+								data-bs-toggle="tab"
+								data-bs-target="#cambiosSolicitados-pane"
+								type="button"
+								role="tab"
+								aria-controls="cambiosSolicitados-pane"
+								aria-selected="true"
+							>
+								Cambios Solicitados
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="seguimientoErrores"
+								data-bs-toggle="tab"
+								data-bs-target="#seguimientoErrores-pane"
+								type="button"
+								role="tab"
+								aria-controls="seguimientoErrores-pane"
+								aria-selected="false"
+							>
+								Errores
+							</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div
+							class="tab-pane fade show active my-4"
+							id="cambiosSolicitados-pane"
+							role="tabpanel"
+							aria-labelledby="cambiosSolicitados"
+							tabindex="0"
+						>
+							<h4>Seguimiento de Cambios Solicitados</h4>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Estado</th>
+											<th scope="col">Descripción</th>
+											<th scope="col">Fecha de inicio</th>
+											<th scope="col">Fecha de resolución pactada</th>
+											<th scope="col">Fecha de resolución real</th>
+											<th scope="col">Costo estimado</th>
+											<th scope="col">Costo informado por constructora</th>
+											<th scope="col">Detalle</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">
+												<span class="badge bg-primary">Nuevo</span>
+											</th>
+											<td>Cambiar puerta a corrediza</td>
+											<td>11/11/23</td>
+											<td>28/11/23</td>
+											<td>N/A</td>
+											<td>$ 12,000.00 MXN</td>
+											<td class="text-success">Asumido por la constructora</td>
+											<td>
+												<a
+													class="link-opacity-75"
+													href="/views/cambios/puertaCorrediza.html"
+													>Enlace</a
+												>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<span class="badge bg-warning">En progreso</span>
+											</th>
+											<td>Piso de escalera a mármol</td>
+											<td>10/10/23</td>
+											<td class="text-danger">06/11/23</td>
+											<td class="text-danger">N/A</td>
+											<td>$ 6,000.00 MXN</td>
+											<td class="text-warning">$ 8,000.00 MXN</td>
+											<td><a class="link-opacity-75" href="/views/cambios/pisoMarmol.html">Enlace</a></td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<span class="badge bg-danger">No iniciado</span>
+											</th>
+											<td>Cristal templado</td>
+											<td>04/04/23</td>
+											<td class="text-danger">26/04/23</td>
+											<td class="text-danger">N/A</td>
+											<td>$ 26,000.00 MXN</td>
+											<td class="text-danger">$ 34,000.00 MXN</td>
+											<td><a class="link-opacity-75" href="views/cambios/cristalTemplado.html">Enlace</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade my-4"
+							id="seguimientoErrores-pane"
+							role="tabpanel"
+							aria-labelledby="seguimientoErrores"
+							tabindex="0"
+						>
+						<h4>Seguimiento de Errores</h4>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">Estado</th>
+										<th scope="col">Descripción</th>
+										<th scope="col">Fecha de inicio</th>
+										<th scope="col">Fecha de resolución pactada</th>
+										<th scope="col">Fecha de resolución real</th>
+										<th scope="col">Costo estimado</th>
+										<th scope="col">Costo informado por constructora</th>
+										<th scope="col">Detalle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<span class="badge bg-primary">Nuevo</span>
+										</th>
+										<td>Rotura de un barandal, se debe remover por completo</td>
+										<td>11/11/23</td>
+										<td>28/11/23</td>
+										<td>N/A</td>
+										<td>$ 12,000.00 MXN</td>
+										<td class="text-success">Asumido por la constructora</td>
+										<td>
+											<a
+												class="link-opacity-75"
+												href="/views/errores/roturaBarandal.html"
+												>Enlace</a
+											>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<span class="badge bg-success">Terminado</span>
+										</th>
+										<td>Madera de puerta cortada</td>
+										<td>10/10/23</td>
+										<td class="text-danger">06/11/23</td>
+										<td class="text-danger">11/11/23</td>
+										<td>$ 6,000.00 MXN</td>
+										<td class="text-warning">$ 8,000.00 MXN</td>
+										<td><a class="link-opacity-75" href="/views/errores/maderaCortada.html">Enlace</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			function setVerticalStepper() {
+				const vw = Math.max(
+					document.documentElement.clientWidth || 0,
+					window.innerWidth || 0
+				);
+				const element = document.getElementById('stepper');
+				if (vw < 768) {
+					element.classList.add('vertical');
+					element.classList.add('justify-content-center');
+				} else {
+					element.classList.remove('vertical');
+				}
+			}
+			setVerticalStepper();
+
+			window.addEventListener('resize', setVerticalStepper, true);
+		</script>
+	</body>
+</html>
